@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:head></h:head>
+<body>
+	<h:form> 
+	  
+	 	<h:outputText value="HATALI GİRİŞ"
+				rendered="#{login.hata!=true}" style="color:red"></h:outputText>
+			<br />
+		<table>
+			<tr>
+				<td><h:outputText value="Enter Username: " /></td>
+				<td><p:inputText id="username" value="#{login.username}" /></td>
+			</tr>
+			<tr>
+				<td><h:outputText value="Enter Password: " /></td>
+				 
+				<td><p:password id="password" value="#{login.password}" />
+				</td>
+			</tr>
+			<tr>
+				<td> </td>
+				
+				<td><h:commandButton value="Login"
+						action="#{login.checkValidity}" /></td>
+			</tr>
+			
+		</table>
+	</h:form>
+</body>
+
+</html>

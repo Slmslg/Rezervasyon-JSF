@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Login.xhtml" PATH="/Login.xhtml"
+  SHAPE="72,70,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Login.xhtml:0" NAME="item"
+   PATH="/Login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="true::#default.xhtml" NAME="output"
+    PATH="/default.xhtml" TARGET="rules:#default.xhtml" TITLE="true" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#default.xhtml" PATH="/default.xhtml"
+  SHAPE="247,75,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#default.xhtml:0" NAME="item"
+   PATH="/default.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="gec::#masaekle.xhtml" NAME="output"
+    PATH="/masaekle.xhtml" TARGET="rules:#masaekle.xhtml" TITLE="gec" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#masaekle.xhtml" PATH="/masaekle.xhtml"
+  SHAPE="80,192,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+</PROCESS>
